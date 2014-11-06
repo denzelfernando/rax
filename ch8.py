@@ -21,7 +21,7 @@ else:
 if not os.access(index_file_path, os.F_OK):
 	sys.exit("Path non existent. Please verify the index file path : " + index_file)
 
-folder_path,file_name=string.rsplit(index_file_path,'/',1)
+file_name=string.rsplit(index_file_path,'/',1)[-1]
 
 	
 ##Auth	
